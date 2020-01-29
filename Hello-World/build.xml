@@ -1,0 +1,18 @@
+<project name="Hello-World" default="" basedir=".">
+<property name="Java_home" value="This is ant project"/>
+	<target name="first">
+	<echo> This is Ant tutorial!</echo>
+	</target>
+<target name="create">
+		<mkdir dir="Hello-World1"/>
+		<touch file="Readme.txt">
+		</touch>
+	<echo file="Readme.txt">Read me first</echo>
+</target>
+<target name="create1">
+<mkdir dir="Destination"/>
+<copy file="Readme.txt" todir="Destination"/>
+<delete  dir="Hello-World1"/>
+</target>
+	
+</project>
